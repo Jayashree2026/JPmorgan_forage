@@ -28,6 +28,7 @@ import re
 import threading
 from datetime import timedelta, datetime
 
+'''TASK 1 is executed'''
 # from itertools import izip
 from random import normalvariate, random
 from socketserver import ThreadingMixIn
