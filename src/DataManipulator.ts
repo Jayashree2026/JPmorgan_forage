@@ -5,10 +5,10 @@ export interface Row {
   price_abc:number,
   price_def:number,
   ratio:number,
-  trigger_alert:number | undefined,
   upper_bound: number,
   lower_bound: number,
   timestamp: Date,
+  trigger_alert:number | undefined,
 }
 
 
@@ -24,7 +24,8 @@ export class DataManipulator {
       price_abc:priceABC,
       price_def:priceDEF,
       ratio,
-      timestamp: serverRespond[0].timestamp>serverRespond[1].timestamp?serverRespond[0].timestamp:serverRespond[1].timestamp,
+      timestamp: serverRespond[0].timestamp>serverRespond[1].timestamp ?
+        serverRespond[0].timestamp:serverRespond[1].timestamp,
       trigger_alert:(ratio>upperbound||ratio<lowerbound)?ratio:undefined,
       upper_bound: upperbound,
       lower_bound: lowerbound,
