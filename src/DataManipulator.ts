@@ -19,7 +19,7 @@ export class DataManipulator {
     const priceDEF=(serverRespond[1].top_ask.price+serverRespond[1].top_bid.price)/2;
     const ratio=priceABC/priceDEF;
     const upperbound=1+0.05;
-    const lowerbound=1+0.05;
+    const lowerbound=1-0.05;
     return {
       price_abc:priceABC,
       price_def:priceDEF,
