@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "bank-merge-co-task-2",
+=======
+  "name": "bank-merge-co-task-3",
+>>>>>>> task3-branch
   "version": "0.1.0",
   "private": true,
   "dependencies": {
